@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+  border: 1px solid red;
+	height: 50px;
+	&-flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 50px;
+		padding: 0 1em;
+	}
+	&-logo {
+		margin: 0;
+	}
+	&-check {
+		display: none;
+	}
+	&-icon {
+		background-image: url('../images/icon-hamburger.svg');
+		width: 30px;
+		height: 30px;
+		background-repeat: no-repeat;
+		background-position: 25%;
+	}
+}
