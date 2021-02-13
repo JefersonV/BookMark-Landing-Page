@@ -26,16 +26,67 @@
   background-repeat: no-repeat;
 }
 
+.hero-image {
+  width: 100%;
+}
+
+.hero-title {
+  font-size: 2.2em;
+  text-align: center;
+  font-weight: 500;
+}
+
+.hero-paragraph {
+  font-family: 'Roboo', sans-serif;
+  text-align: center;
+  color: #9194a1;
+  line-height: 1.7em;
+  padding: 0 3em;
+  margin-bottom: 1.8em;
+}
+
+.hero-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-button, .hero-button--firefox {
+  /* border: 1px solid red; */
+  display: inline-block;
+  padding: 0.8em 0.6em;
+  border-radius: 5px;
+  background-color: #5368df;
+  color: white;
+  text-decoration: none;
+  margin-right: 0.7em;
+  font-weight: bold;
+}
+
+.hero-button--firefox {
+  background-color: #e8eaf6;
+  color: #86888d;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .hero img {
+    height: 500px;
+  }
+}
+
 /* colors */
 /* fonts */
 body {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
   font-family: "Rubik", sans-serif;
 }
-
-/* header */
 /*# sourceMappingURL=style.css.map */
