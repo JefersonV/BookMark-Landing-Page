@@ -1,0 +1,13 @@
+.features {
+  &-title {
+		font-family: 'Rubik', sans-serif;
+		font-size: 1.7em;
+		text-align: center;
+		font-weight: 500;
+		margin: .6em 0
+	}  
+	&-paragraph {
+		@extend .hero-paragraph;
+		padding: 0 2em 1em;
+	}
+}

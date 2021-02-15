@@ -1,5 +1,5 @@
 .header {
-
+	position: relative;
 	&-flex {
 		display: flex;
 		justify-content: space-between;
@@ -12,10 +12,66 @@
 	&-check {
 		display: none;
 	}
-    &-label {
-        background: url('../../images/icon-hamburger.svg');
-        width: 25px;
-				height: 25px;
-				background-repeat: no-repeat;
-    }
+	&-label {
+		background: url('../../images/icon-hamburger.svg');
+		width: 25px;
+		height: 25px;
+		background-repeat: no-repeat;
+		z-index: 100;
+  }
+	.menu {
+		display: none;
+	}
+	&-check:checked {
+		& ~ .menu {
+			display: block;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: hsla(230, 25%, 24%, 0.89) 98%;
+			height: 100vh;
+			&-mobile {
+				height: 5em;
+				display: flex;
+			}
+			&-logo {
+				margin: 0;
+			}
+			& ul {
+				list-style: none;
+				padding: 0 40px;
+			}
+			& li {
+				padding: 1em 0;
+				border-top: 1px solid #ccc;
+			}
+			& a {
+				display: block;
+				color: white;
+				text-decoration: none;
+				text-transform: uppercase;
+				text-align: center;
+			}
+			& button {
+				width: 100%;
+				height: 3em;
+				padding: 0 40px;
+				background: none;
+				color: white;
+				border: 3px solid white;
+				border-radius: 5px;
+				text-transform: uppercase;
+				font-size: 1em;
+				font-weight: bold;
+				font-family: $font-p;
+				letter-spacing: .1em;
+			}	
+		} 
+	}
+}
+
+#checkbox {
+	display: none;
 }
