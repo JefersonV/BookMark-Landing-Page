@@ -1,18 +1,19 @@
 .hero {
   &-image {
 		width: 100%;
+		margin: 2em 0 1.5em;
 	}
 	&-description {
 
 	}	
 	&-title {
-	
+		margin: 0;
 		font-size: 2.2em;
 		text-align: center;
 		font-weight: 500;
 	}
 	&-paragraph {
-		font-family: 'Roboto', sans-serif;
+		font-family: $font-p;
 		text-align: center;
 		color: hsl(229, 8%, 60%);
 		line-height: 1.7em;

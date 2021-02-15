@@ -135,16 +135,18 @@
 
 .hero-image {
   width: 100%;
+  margin: 2em 0 1.5em;
 }
 
 .hero-title {
+  margin: 0;
   font-size: 2.2em;
   text-align: center;
   font-weight: 500;
 }
 
 .hero-paragraph, .features-paragraph {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   color: #9194a1;
   line-height: 1.7em;
@@ -187,7 +189,7 @@
 }
 
 .features-title {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 1.7em;
   text-align: center;
   font-weight: 500;

@@ -1,6 +1,6 @@
 .features {
   &-title {
-		font-family: 'Rubik', sans-serif;
+		font-family: $font-title;
 		font-size: 1.7em;
 		text-align: center;
 		font-weight: 500;
@@ -11,3 +11,4 @@
 		padding: 0 2em 1em;
 	}
 }
+
