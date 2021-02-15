@@ -30,11 +30,59 @@
   width: 25px;
   height: 25px;
   background-repeat: no-repeat;
-  z-index: 100;
+  /* z-index: 100; */
+}
+
+.header-icon {
+  background: url("../../images/icon-facebook.svg");
 }
 
 .header .menu {
   display: none;
+  /* 		&-icon-f {
+			background: url('../../images/icon-facebook.svg');
+			background-size: 25px;
+			height: 25px;
+			width: 25px;
+		}
+		&-icon-t {
+			background: url('../../images/icon-twitter.svg');
+		} */
+}
+
+.header .menu-mobile {
+  padding: 0 25px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .menu-logo {
+  margin: 0;
+}
+
+.header .menu-icons {
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .menu-icon {
+  margin: 1em;
 }
 
 .header-check:checked ~ .menu {
@@ -48,20 +96,9 @@
   height: 100vh;
 }
 
-.header-check:checked ~ .menu-mobile {
-  height: 5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header-check:checked ~ .menu-logo {
-  margin: 0;
-}
-
 .header-check:checked ~ .menu ul {
   list-style: none;
-  padding: 0 40px;
+  padding: 0 25px;
 }
 
 .header-check:checked ~ .menu li {
