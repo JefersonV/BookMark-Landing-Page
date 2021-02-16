@@ -138,14 +138,14 @@
   margin: 2em 0 1.5em;
 }
 
-.hero-title, .tabs-h2, .extension-description h2 {
+.hero-title, .tabs-h2, .extension-description h2, .ask-description h2 {
   margin: 0;
   font-size: 2.2em;
   text-align: center;
   font-weight: 500;
 }
 
-.hero-paragraph, .features-paragraph, .tabs-p, .extension-description p {
+.hero-paragraph, .features-paragraph, .tabs-p, .extension-description p, .ask-description p {
   font-family: "Roboto", sans-serif;
   text-align: center;
   color: #9194a1;

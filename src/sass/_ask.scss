@@ -1,0 +1,10 @@
+.ask {
+	&-description {
+		h2 {
+			@extend .hero-title;
+		}
+		p {
+			@extend .hero-paragraph;
+		}
+	}
+}
