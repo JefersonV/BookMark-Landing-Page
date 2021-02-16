@@ -24,16 +24,34 @@
 		list-style: none;
 	}
  	&-link {
-		padding: 1em;
-		border: 1px solid blue;
+		padding: 1em 0;
+		border-bottom: 1px solid $gray-blue;
 	}
 	&-content {
 		display: none;
+		/* flex-direction: column; */
 	}
 	input[id="bookmarking"]:checked{
 		padding: 20px;
-		& ~ ul #bookmarking {
+		& ~ ul #tab-bookmarking {
 			border: 1px solid red;
+			padding: 20px;
+			display: block;
+		}
+	} 
+	input[id="searching"]:checked{
+		padding: 20px;
+		& ~ ul #tab-searching {
+			border: 1px solid red;
+			padding: 20px;
+			display: block;
+		}
+	} 
+	input[id="sharing"]:checked{
+		padding: 20px;
+		& ~ ul #tab-sharing {
+			border: 1px solid red;
+			padding: 20px;
 			display: block;
 		}
 	} 

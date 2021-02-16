@@ -216,20 +216,42 @@
 }
 
 .tabs-link {
-  padding: 1em;
-  border: 1px solid blue;
+  padding: 1em 0;
+  border-bottom: 1px solid #9194a1;
 }
 
 .tabs-content {
   display: none;
+  /* flex-direction: column; */
 }
 
 .tabs input[id="bookmarking"]:checked {
   padding: 20px;
 }
 
-.tabs input[id="bookmarking"]:checked ~ ul #bookmarking {
+.tabs input[id="bookmarking"]:checked ~ ul #tab-bookmarking {
   border: 1px solid red;
+  padding: 20px;
+  display: block;
+}
+
+.tabs input[id="searching"]:checked {
+  padding: 20px;
+}
+
+.tabs input[id="searching"]:checked ~ ul #tab-searching {
+  border: 1px solid red;
+  padding: 20px;
+  display: block;
+}
+
+.tabs input[id="sharing"]:checked {
+  padding: 20px;
+}
+
+.tabs input[id="sharing"]:checked ~ ul #tab-sharing {
+  border: 1px solid red;
+  padding: 20px;
   display: block;
 }
 
