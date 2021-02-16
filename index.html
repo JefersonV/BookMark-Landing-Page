@@ -76,7 +76,7 @@
 		</div>
 	</header>
 
-	<section class="hero is-hidden">
+	<section class="hero">
 		<img src="./images/illustration-hero.svg" class="hero-image" alt="illustration-hero">
 
 		<div class="hero-description">
@@ -95,80 +95,131 @@
 	</section>
 
 	<section class="features">
-		<h2 class="features-title">
-			Features
-		</h2>
-		<p class="features-paragraph">
-			Our aim is to make it quick and easy for you to access your favourite websites.
-			Your bookmarks sync between your devices so you can access them on the go.
-		</p>
+		<div class="wrapper">
+			<h2 class="features-title">
+				Features
+			</h2>
+			<p class="features-paragraph">
+				Our aim is to make it quick and easy for you to access your favourite websites.
+				Your bookmarks sync between your devices so you can access them on the go.
+			</p>
 
-		<div class="tabs">
-			<!-- radios conectan a  -->
-			<input type="radio" value="bookmarking" name="tabs" id="bookmarking" checked>
-			<input type="radio" name="tabs" value="searching" id="searching">
-			<input type="radio" name="tabs" value="sharing" id="sharing">
-			<ul>
-				<li class="tabs-link">
-					<!-- labels -->
-					<label for="bookmarking">
-						Simple Bookmarking
-					</label>
-				</li>
-				<li class="tabs-link">
-					<label for="searching">
-						Speedy Searching
-					</label>
-				</li>
-				<li class="tabs-link">
-					<label for="sharing">
-						Easy Sharing
-					</label>
-				</li>
+			<div class="tabs">
+				<!-- radios conectan a  -->
+				<input class="tabs-radio" type="radio" value="bookmarking" name="tabs" id="bookmarking" checked>
+				<input class="tabs-radio" type="radio" name="tabs" value="searching" id="searching">
+				<input class="tabs-radio" type="radio" name="tabs" value="sharing" id="sharing">
+				<ul>
+					<li class="tabs-link">
+						<!-- labels -->
+						<label for="bookmarking">
+							Simple Bookmarking
+						</label>
+					</li>
+					<li class="tabs-link">
+						<label for="searching">
+							Speedy Searching
+						</label>
+					</li>
+					<li class="tabs-link">
+						<label for="sharing">
+							Easy Sharing
+						</label>
+					</li>
+					<!--Content de las tabs -->
+					<div class="tabs-grid">
+						<div class="tabs-content" id="tab-bookmarking">
+							<img class="tabs-image" src="./images/illustration-features-tab-1.svg" alt="tab-image">
+							<div class="tabs-description">
+								<h2 class="tabs-h2">
+									Bookmark in one click
+								</h2>
+								<p class="tabs-p">
+									Organize your bookmarks however you like. Our simple drag-and-drop interface
+									gives you complete control over how you manage your favourite sites.
+								</p>
+								<button class="tabs-button">More Info</button>
+							</div>
+						</div>
+						<div class="tabs-content" id="tab-searching">
+							<img class="tabs-image" src="./images/illustration-features-tab-2.svg" alt="tab-image">
+							<div class="tabs-description">
+								<h2 class="tabs-h2">
+									Intelligent search
+								</h2>
+								<p class="tabs-p">
+									Our powerful search feature will help you find saved sites in no time at all.
+									No need to trawl through all of your bookmarks.
+								</p>
+								<button class="tabs-button">More Info</button>
 
-				<div class="tabs-grid">
-					<div class="tabs-content" id="tab-bookmarking">
-						<img src="./static/images/illustration-features-tab-1.svg" alt="">
-						<div>
-							<h2 class="u-h2">
-								Bookmark in one click
-							</h2>
-							<p class="u-p">
-								Organize your bookmarks however you like. Our simple drag-and-drop interface
-								gives you complete control over how you manage your favourite sites.
-							</p>
-							<button class="u-button">More Info</button>
+							</div>
+						</div>
+						<div class="tabs-content" id="tab-sharing">
+							<img class="tabs-image" src="./images/illustration-features-tab-3.svg" alt="tab-image">
+							<div class="tabs-description">
+								<h2 class="tabs-h2">
+									Share your bookmarks
+								</h2>
+								<p class="tabs-p">
+									Easily share your bookmarks and collections with others. Create a shareable
+									link that you can send at the click of a button.
+								</p>
+								<button class="tabs-button">More Info</button>
+							</div>
 						</div>
 					</div>
-					<div class="tabs-content" id="tab-searching">
-						<img src="./static/images/illustration-features-tab-2.svg" alt="">
-						<div>
-							<h2 class="u-h2">
-								Intelligent search
-							</h2>
-							<p class="u-p">
-								Our powerful search feature will help you find saved sites in no time at all.
-								No need to trawl through all of your bookmarks.
-							</p>
-							<button class="u-button">More Info</button>
+				</ul>
+			</div>
+		</div>
+	</section>
 
-						</div>
+	<section class="extension">
+		<div class="wrapper">
+			<div class="extension-description">
+				<h2>Download the extension</h2>
+				<p>We've got more browsers in the pipeline. Please do let us know if you've got a favorite you'd like us to
+					pritize.</p>
+			</div>
+			<article class="extension-grid">
+				<div class="extension-card">
+					<img src="./images/logo-chrome.svg" alt="">
+					<div class="extension-card-desc">
+						<h4>Add to Chrome</h4>
+						<p>Minimum version 62</p>
 					</div>
-					<div class="tabs-content" id="tab-sharing">
-						<img src="./static/images/illustration-features-tab-3.svg" alt="">
-						<div>
-							<h2 class="u-h2">
-								Share your bookmarks
-							</h2>
-							<p class="u-p">
-								Easily share your bookmarks and collections with others. Create a shareable
-								link that you can send at the click of a button.
-							</p>
-							<button class="u-button">More Info</button>
-						</div>
-					</div>
+					<button class="extension-button">Add & Install Extension</button>
 				</div>
-			</ul>
+
+				<div class="extension-card">
+					<img src="./images/logo-firefox.svg" alt="">
+					<div class="extension-card-desc">
+						<h4>Add to Firefox</h4>
+						<p>Minimum version 55</p>
+					</div>
+					<button class="extension-button">Add & Install Extension</button>
+				</div>
+
+				<div class="extension-card">
+					<img src="./images/logo-opera.svg" alt="">
+					<div class="extension-card-desc">
+						<h4>Add to Opera</h4>
+						<p>Minimum version 46</p>
+					</div>
+					<button class="extension-button">Add & Install Extension</button>
+				</div>
+			</article>
+		</div>
+	</section>
+
+	<section class="ask">
+		<div class="ask-description">
+			<h2>
+				Frequently Asked Questions
+			</h2>
+			<p>
+				Here are some of our FAQs. If you have any other questions you'd like answerred please feel free to email us.
+			</p>
 		</div>
 	</section>
 </body>

@@ -9,6 +9,8 @@ $font-p: 'Roboto', sans-serif;
 @import "./_header";
 @import "./hero";
 @import "./features";
+@import "./extension";
+@import "./ask";
 
 
 body {
@@ -23,4 +25,8 @@ h1 {
 
 .is-hidden {
 	display: none;
+}
+
+.wrapper {
+	/* padding: 0 1em; */
 }
