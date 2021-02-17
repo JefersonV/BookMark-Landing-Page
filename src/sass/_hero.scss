@@ -1,4 +1,7 @@
 .hero {
+	&-grid {
+		display: grid;
+	}
   &-image {
 		width: 100%;
 		margin: 2em 0 1.5em;
@@ -17,7 +20,7 @@
 		text-align: center;
 		color: hsl(229, 8%, 60%);
 		line-height: 1.7em;
-		padding: 0 3em;
+		
 		margin-bottom: 1.8em;
 	}
 	&-buttons {
@@ -44,10 +47,53 @@
 	}
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 	.hero {
-		img {
-			height: 500px;
+		margin-bottom: 5em;
+		&-grid {
+			grid-template-columns: 500px 1fr;
+			grid-template-areas: "description image";
+			align-items: center;
+		}
+		&-image {
+			width: 90%;
+			justify-self: flex-end;
+			
+		}
+		&-description {
+			grid-area: description;
+		}
+		&-title {
+			text-align: left;
+		}
+		&-paragraph {
+			text-align: left;
+		}
+
+		&-buttons {
+			margin: 0;
+			justify-content: start;
 		}
 	}
-} */
+	 
+}
+
+@media screen and (min-width: 1300px) {
+	.hero {
+		&-image {
+			justify-self: end;
+			position: relative;
+			left: 7em;
+		}
+		&-description {
+
+		}
+		&-title {
+			font-size: 2.7em;
+		}
+		&-paragraph {
+			font-size: 1.1em;
+		}
+	}
+}
+

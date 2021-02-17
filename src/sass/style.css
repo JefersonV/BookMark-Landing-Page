@@ -173,6 +173,11 @@
   }
 }
 
+.hero-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
 .hero-image {
   width: 100%;
   margin: 2em 0 1.5em;
@@ -190,7 +195,6 @@
   text-align: center;
   color: #9194a1;
   line-height: 1.7em;
-  padding: 0 3em;
   margin-bottom: 1.8em;
 }
 
@@ -222,13 +226,56 @@
   font-weight: 700;
 }
 
-/* @media screen and (min-width: 768px) {
-	.hero {
-		img {
-			height: 500px;
-		}
-	}
-} */
+@media screen and (min-width: 1024px) {
+  .hero {
+    margin-bottom: 5em;
+  }
+  .hero-grid {
+    -ms-grid-columns: 500px 1fr;
+        grid-template-columns: 500px 1fr;
+        grid-template-areas: "description image";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-image {
+    width: 90%;
+    justify-self: flex-end;
+  }
+  .hero-description {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: description;
+  }
+  .hero-title, .tabs-h2, .extension-description h2, .ask-description h2 {
+    text-align: left;
+  }
+  .hero-paragraph, .features-paragraph, .tabs-p, .extension-description p, .ask-description p, .carousel-paragraph {
+    text-align: left;
+  }
+  .hero-buttons, .tabs-button {
+    margin: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .hero-image {
+    -ms-grid-column-align: end;
+        justify-self: end;
+    position: relative;
+    left: 7em;
+  }
+  .hero-title, .tabs-h2, .extension-description h2, .ask-description h2 {
+    font-size: 2.7em;
+  }
+  .hero-paragraph, .features-paragraph, .tabs-p, .extension-description p, .ask-description p, .carousel-paragraph {
+    font-size: 1.1em;
+  }
+}
+
 .features-title {
   font-family: "Rubik", sans-serif;
   font-size: 1.7em;
@@ -581,5 +628,7 @@ h1 {
 
 .wrapper {
   /* padding: 0 1em; */
+  max-width: 1100px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
