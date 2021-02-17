@@ -2,7 +2,9 @@
 $soft-blue: #333;
 $soft-red: hsl(0, 94%, 66%);
 $gray-blue: hsl(229, 8%, 60%);
+$light-gray: #e5e5e5;
 $dark-blue: hsl(229, 31%, 21%);
+$purple: #5368df;
 /* fonts */
 $font-title: 'Rubik', sans-serif;
 $font-p: 'Roboto', sans-serif;
@@ -11,7 +13,6 @@ $font-p: 'Roboto', sans-serif;
 @import "./features";
 @import "./extension";
 @import "./ask";
-
 
 body {
 	margin: 0;
