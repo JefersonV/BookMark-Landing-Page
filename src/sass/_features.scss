@@ -51,8 +51,8 @@
 	}
 	&-image {
 		max-width: 100%;
-		display: inline-flex;
-		justify-content: center;
+		display: block;
+		margin: auto;
 	}
 	&-description {
 		margin-top: 4em;

@@ -97,8 +97,47 @@
 			}	
 		} 
 	}
+	/* d-none a modo desktop */
+	&-navigation {
+		display: none;
+	}
 }
 
 #checkbox {
 	display: none;
+}
+
+@media screen and (min-width: 1000px) {
+	.header {
+		/* d-none burger button */
+		&-label {
+			display: none;
+		}
+		&-navigation {
+			display: block;
+			ul {
+				display: flex;
+				list-style: none;
+				
+			}
+			li {
+				margin-left: 1.1em;
+			}
+			a {
+				color: black;
+				text-decoration: none;
+				text-transform: uppercase;
+			
+			}
+		}
+		&-navigation .header-btn {
+			padding: .8em 2em;
+			background: red;
+			border-radius: 10px;
+			color: white;
+			letter-spacing: .1em;
+			font-size: 1em;
+			margin-left: 1.3em;
+		}
+	}
 }

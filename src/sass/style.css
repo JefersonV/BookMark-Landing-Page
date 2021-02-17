@@ -2,6 +2,7 @@
 /* fonts */
 .header {
   position: relative;
+  /* d-none a modo desktop */
 }
 
 .header-flex {
@@ -129,8 +130,47 @@
   letter-spacing: .1em;
 }
 
+.header-navigation {
+  display: none;
+}
+
 #checkbox {
   display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .header {
+    /* d-none burger button */
+  }
+  .header-label {
+    display: none;
+  }
+  .header-navigation {
+    display: block;
+  }
+  .header-navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+  }
+  .header-navigation li {
+    margin-left: 1.1em;
+  }
+  .header-navigation a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .header-navigation .header-btn {
+    padding: .8em 2em;
+    background: red;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: .1em;
+    font-size: 1em;
+    margin-left: 1.3em;
+  }
 }
 
 .hero-image {
@@ -182,12 +222,13 @@
   font-weight: 700;
 }
 
-@media screen and (min-width: 768px) {
-  .hero img {
-    height: 500px;
-  }
-}
-
+/* @media screen and (min-width: 768px) {
+	.hero {
+		img {
+			height: 500px;
+		}
+	}
+} */
 .features-title {
   font-family: "Rubik", sans-serif;
   font-size: 1.7em;
@@ -251,12 +292,8 @@
 
 .tabs-image {
   max-width: 100%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: block;
+  margin: auto;
 }
 
 .tabs-description {
@@ -320,6 +357,10 @@
   margin-bottom: 2em;
 }
 
+.extension-description h2 {
+  font-size: 1.5em;
+}
+
 .extension-description p {
   padding: 0 1.7em;
 }
@@ -361,6 +402,18 @@
   border: none;
   padding: 1em 1.5em;
   border-radius: 10px;
+}
+
+.ask {
+  margin-top: 8em;
+}
+
+.ask-description h2 {
+  font-size: 1.5em;
+}
+
+.ask-description p {
+  padding: 0 1.2em;
 }
 
 body {
