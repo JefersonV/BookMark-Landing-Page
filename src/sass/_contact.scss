@@ -1,0 +1,41 @@
+.contact {
+  background: $purple;
+	text-align: center;
+	color: white;
+	&-description {
+		padding-top: 3em;
+	}
+	&-p1 {
+		span {
+			text-transform: uppercase;
+		}
+	} 
+	&-p2 {
+		font-size: 1.5em;
+		padding: 0 1em;
+	}
+	&-form {
+		padding: 0 1em;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		input {
+			display: block;
+			width: 90%;
+			height: 2.5em;
+			border-radius: .5em;
+			outline: none;
+			border: none;
+		}
+		button {
+			height: 2.5em;
+			width: 90%;
+			margin: 1em 0 4em;
+			border-radius: .5em;
+			outline: none;
+			border: none;
+			background-color: $soft-red;
+			color: white;
+		}
+	}
+}

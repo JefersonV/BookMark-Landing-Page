@@ -466,6 +466,105 @@
   color: #333;
 }
 
+.contact {
+  background: #5368df;
+  text-align: center;
+  color: white;
+}
+
+.contact-description {
+  padding-top: 3em;
+}
+
+.contact-p1 span {
+  text-transform: uppercase;
+}
+
+.contact-p2 {
+  font-size: 1.5em;
+  padding: 0 1em;
+}
+
+.contact-form {
+  padding: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-form input {
+  display: block;
+  width: 90%;
+  height: 2.5em;
+  border-radius: .5em;
+  outline: none;
+  border: none;
+}
+
+.contact-form button {
+  height: 2.5em;
+  width: 90%;
+  margin: 1em 0 4em;
+  border-radius: .5em;
+  outline: none;
+  border: none;
+  background-color: #fa5757;
+  color: white;
+}
+
+.footer {
+  background-color: #252b46;
+}
+
+.footer-grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer svg {
+  margin: 2em 0;
+}
+
+.footer-nav {
+  list-style: none;
+}
+
+.footer-nav li {
+  padding: .8em 0;
+}
+
+.footer-nav li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-icons svg {
+  margin-right: 1em;
+}
+
 body {
   margin: 0;
   padding: 0;

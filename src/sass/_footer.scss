@@ -1,0 +1,30 @@
+.footer {
+	background-color: $dark-blue;
+	&-grid {
+		display: grid;
+		justify-content: center;
+	}
+	svg	{
+		margin: 2em 0;
+	}
+	&-nav {
+		list-style: none;
+		li {
+			padding: .8em 0;
+		}
+		li a {
+			color: white;
+			text-decoration: none;
+			text-transform: uppercase;
+			
+		}
+	}
+	&-icons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	svg {
+		margin-right: 1em;
+	}
+	}
+}
