@@ -38,12 +38,14 @@
 		text-decoration: none;
 		margin-right: 0.7em;
 		font-weight: bold;
+		text-align: center
 	}
 	&-button--firefox {
 		@extend .hero-button;
 		background-color: #e8eaf6;
 		color: hsl(225, 3%, 54%);
 		font-weight: 700;
+	
 	}
 }
 
