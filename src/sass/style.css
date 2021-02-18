@@ -492,6 +492,7 @@
 
 .extension-description h2 {
   font-size: 1.5em;
+  font-weight: bold;
 }
 
 .extension-description p {
@@ -545,7 +546,7 @@
     text-align: center;
     text-align: center;
     font-size: 2em;
-    font-weight: bold;
+    margin: .7em 0;
   }
   .extension-description p {
     text-align: center;
@@ -645,11 +646,15 @@
     text-align: center;
     font-size: 2em;
     font-weight: bold;
+    margin: .7em 0;
   }
   .ask-description p {
     margin: 0 auto;
     max-width: 550px;
     text-align: center;
+  }
+  .ask-button {
+    margin: 4em auto 7em;
   }
   /* component carousel */
   .carousel-item {
@@ -666,6 +671,11 @@
 
 .contact-description {
   padding-top: 3em;
+}
+
+.contact-p1 {
+  font-size: .7em;
+  letter-spacing: .4em;
 }
 
 .contact-p1 span {
@@ -712,6 +722,17 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .contact-p1 {
+    margin-bottom: 3em;
+  }
+  .contact-p2 {
+    font-size: 2em;
+    font-weight: 500;
+    padding: 0 1em;
+    max-width: 30%;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+  }
   .contact-form {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -724,6 +745,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     padding-bottom: 4em;
+    margin-top: 2em;
   }
   .contact-form input {
     max-width: 19%;

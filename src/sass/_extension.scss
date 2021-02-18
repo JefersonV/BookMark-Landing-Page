@@ -8,7 +8,9 @@
 		margin-bottom: 2em;
 		h2 {
 			@extend .hero-title;
-			font-size: 1.5em
+			font-size: 1.5em;
+			font-weight: bold;
+
 		}
 		p {
 			@extend .hero-paragraph;
@@ -58,7 +60,7 @@
 				text-align: center;
 				text-align: center;
 				font-size: 2em;
-				font-weight: bold;
+				margin: .7em 0;
 			}
 			p {
 				text-align: center;

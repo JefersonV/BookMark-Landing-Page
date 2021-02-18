@@ -6,6 +6,8 @@
 		padding-top: 3em;
 	}
 	&-p1 {
+		font-size: .7em;
+		letter-spacing: .4em;
 		span {
 			text-transform: uppercase;
 		}
@@ -14,6 +16,7 @@
 		font-size: 1.5em;
 		padding: 0 1em;
 	}
+
 	&-form {
 		padding: 0 1em;
 		display: flex;
@@ -43,13 +46,25 @@
 @media screen and (min-width: 1024px) {
 	.contact {
 		&-description {
-
+		
+		}
+		&-p1 {
+			margin-bottom: 3em;
+		}
+		&-p2 {
+			font-size: 2em;
+			font-weight: 500;
+			padding: 0 1em;
+			max-width: 30%;
+			margin: 0 auto;
+			font-family: $font-p;
 		}
 		&-form {
 			flex-direction: row;
 			align-items: center;
 			justify-content: center;
 			padding-bottom: 4em;
+			margin-top: 2em; 
 			input {
 				max-width: 19%;
 				height: 3em;
