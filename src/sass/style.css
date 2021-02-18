@@ -391,6 +391,18 @@
   display: block;
 }
 
+@media screen and (min-width: 1024px) {
+  .features-title {
+    text-align: center;
+  }
+  .features-paragraph {
+    display: block;
+    margin: 0 auto;
+    max-width: 550px;
+    text-align: center;
+  }
+}
+
 .extension-grid {
   display: -ms-grid;
   display: grid;

@@ -96,3 +96,17 @@
 		}
 	} 
 }
+
+@media screen and (min-width:1024px) {
+	.features {
+		&-title {
+			text-align: center;
+		}
+		&-paragraph {
+			display: block;
+			margin: 0 auto;
+			max-width: 550px;
+			text-align: center;
+		}
+	}
+}
