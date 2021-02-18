@@ -20,9 +20,9 @@
 .tabs {
 	/* border: 1px solid red; */
 	padding: 0 1em;
-	&-grid {
+/* 	&-grid {
 		display: grid;
-	}
+	} */
 	&-radio {
 		display: none;
 	}
@@ -69,7 +69,7 @@
 	}
 	&-button {
 		display: none;
-		@extend .hero-buttons;
+		@extend .hero-button;
 	}
 	input[id="bookmarking"]:checked{
 		padding: 20px;
@@ -101,12 +101,71 @@
 	.features {
 		&-title {
 			text-align: center;
+			font-size: 2em;
 		}
 		&-paragraph {
-			display: block;
 			margin: 0 auto;
 			max-width: 550px;
 			text-align: center;
+		}
+	}
+
+	/* component tabs */
+	.tabs {
+		&-grid1 {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			column-gap: .5em;
+		}
+	
+		&-description	{
+			margin: 0;
+			max-width: 420px;
+			h2 {
+				font-size: 2em;
+			}
+			p {
+				font-size: 1.1em;
+			}
+		}
+		&-image {
+			position: relative;
+			left: -3.5em;
+		}
+		input[id="bookmarking"]:checked{
+			padding: 0;
+			& ~ ul #tab-bookmarking {
+				/* border: 1px solid red; */
+				padding: 0;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+		} 
+		input[id="searching"]:checked{
+			padding: 0;
+			& ~ ul #tab-searching {
+			/* 	border: 1px solid red; */
+				padding: 0;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+		} 
+		input[id="sharing"]:checked{
+			padding: 0;
+			& ~ ul #tab-sharing {
+				/* border: 1px solid red; */
+				padding: 0;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+		} 
+		&-button {
+			display: block;
+			outline: none;
+			border: none;
 		}
 	}
 }

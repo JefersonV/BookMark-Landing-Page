@@ -42,10 +42,40 @@
 		width: 70%;
 		margin: 0 auto;
 		color: white;
-		background-color: #5368df;
+		background-color: $purple;
 		outline: none;
 		border: none;
 		padding: 1em 1.5em;
 		border-radius: 10px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.extension {
+		margin-top: 9em;
+		&-description {
+			h2 {
+				text-align: center;
+			}
+			p {
+				text-align: center;
+				margin: auto;
+				padding: 0;
+				max-width: 550px;
+			}
+		}
+		&-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			column-gap: 2em;
+			padding: 0 6em;
+			height: 418px;
+		}
+		&-card--firefox {
+			align-self: center;
+		}
+		&-card--opera {
+			align-self: flex-end;
+		}
 	}
 }

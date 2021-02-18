@@ -15,7 +15,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1em;
+  padding: 1em 0;
 }
 
 .header-image {
@@ -198,7 +198,7 @@
   margin-bottom: 1.8em;
 }
 
-.hero-buttons, .tabs-button {
+.hero-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,7 +208,7 @@
   margin-bottom: 8em;
 }
 
-.hero-button, .hero-button--firefox {
+.hero-button, .hero-button--firefox, .tabs-button {
   /* border: 1px solid red; */
   display: inline-block;
   padding: 0.8em 0.6em;
@@ -253,7 +253,7 @@
   .hero-paragraph, .features-paragraph, .tabs-p, .extension-description p, .ask-description p, .carousel-paragraph {
     text-align: left;
   }
-  .hero-buttons, .tabs-button {
+  .hero-buttons {
     margin: 0;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -297,16 +297,14 @@
 .tabs {
   /* border: 1px solid red; */
   padding: 0 1em;
+  /* 	&-grid {
+		display: grid;
+	} */
   /* 	&:hover::before {
 		content: "";
 		height: 2px;
 		color: red;
 	} */
-}
-
-.tabs-grid {
-  display: -ms-grid;
-  display: grid;
 }
 
 .tabs-radio {
@@ -394,12 +392,88 @@
 @media screen and (min-width: 1024px) {
   .features-title {
     text-align: center;
+    font-size: 2em;
   }
   .features-paragraph {
-    display: block;
     margin: 0 auto;
     max-width: 550px;
     text-align: center;
+  }
+  /* component tabs */
+  .tabs-grid1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: .5em;
+            column-gap: .5em;
+  }
+  .tabs-description {
+    margin: 0;
+    max-width: 420px;
+  }
+  .tabs-description h2 {
+    font-size: 2em;
+  }
+  .tabs-description p {
+    font-size: 1.1em;
+  }
+  .tabs-image {
+    position: relative;
+    left: -3.5em;
+  }
+  .tabs input[id="bookmarking"]:checked {
+    padding: 0;
+  }
+  .tabs input[id="bookmarking"]:checked ~ ul #tab-bookmarking {
+    /* border: 1px solid red; */
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tabs input[id="searching"]:checked {
+    padding: 0;
+  }
+  .tabs input[id="searching"]:checked ~ ul #tab-searching {
+    /* 	border: 1px solid red; */
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tabs input[id="sharing"]:checked {
+    padding: 0;
+  }
+  .tabs input[id="sharing"]:checked ~ ul #tab-sharing {
+    /* border: 1px solid red; */
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tabs-button {
+    display: block;
+    outline: none;
+    border: none;
   }
 }
 
@@ -461,6 +535,40 @@
   border: none;
   padding: 1em 1.5em;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .extension {
+    margin-top: 9em;
+  }
+  .extension-description h2 {
+    text-align: center;
+  }
+  .extension-description p {
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    max-width: 550px;
+  }
+  .extension-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 2em;
+            column-gap: 2em;
+    padding: 0 6em;
+    height: 418px;
+  }
+  .extension-card--firefox {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .extension-card--opera {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
 }
 
 .ask {
