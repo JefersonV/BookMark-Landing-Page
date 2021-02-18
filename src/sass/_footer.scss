@@ -3,6 +3,8 @@
 	&-grid {
 		display: grid;
 		justify-content: center;
+		align-items: center;
+
 	}
 	svg	{
 		margin: 2em 0;
@@ -26,5 +28,22 @@
 	svg {
 		margin-right: 1em;
 	}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.footer {
+		&-grid {
+			grid-template-columns: 150px 700px 1fr;
+		}
+		&-nav {
+			li {
+				display: inline;
+				margin-right: 2.5em;
+			}
+		}
+		&-icons {
+			justify-self: flex-end;
+		}
 	}
 }
