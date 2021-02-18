@@ -39,3 +39,28 @@
 		}
 	}
 }
+
+@media screen and (min-width: 1024px) {
+	.contact {
+		&-description {
+
+		}
+		&-form {
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			padding-bottom: 4em;
+			input {
+				max-width: 19%;
+				height: 3em;
+				padding-left: 1em;
+			}
+			button {
+				max-width: 8%;
+				height: 3em;
+				margin: 0 1em;
+				
+			}
+		}
+	}
+}

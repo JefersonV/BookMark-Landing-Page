@@ -54,6 +54,35 @@
 			float: right;
 			color: $soft-blue;
 		}
-		
 	}
+}
+
+@media screen and (min-width: 1024px) {
+	.ask {
+		margin-top: 4em;
+		&-description {
+			h2 {
+				text-align: center;
+				font-size: 2em;
+				font-weight: bold;
+
+			}
+			p {
+				margin: 0 auto;
+				max-width: 550px;
+				text-align: center;
+			}
+		}
+	}
+
+	/* component carousel */
+
+	.carousel {
+		
+		&-item {
+			max-width: 40%;
+			margin: auto;
+		}
+	}
+
 }

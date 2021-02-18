@@ -56,12 +56,16 @@
 		&-description {
 			h2 {
 				text-align: center;
+				text-align: center;
+				font-size: 2em;
+				font-weight: bold;
 			}
 			p {
 				text-align: center;
 				margin: auto;
 				padding: 0;
 				max-width: 550px;
+				font-size: 1.1em;
 			}
 		}
 		&-grid {
