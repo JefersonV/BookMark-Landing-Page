@@ -6,15 +6,12 @@
 		font-weight: 500;
 		margin: .6em 0
 	}
-	&-unorder {
-		padding: 0;
-		list-style: none;
-		text-align: center;
-	} 
+
 	&-paragraph {
 		@extend .hero-paragraph;
 		padding: 0 2em 1em;
 	}
+
 }
 
 .tabs {
@@ -34,13 +31,24 @@
 		}
 	}
 	
-	/*linea 60  */
+
 	&-grid {
 		margin-top: 4em;
 	}
 	&-content {
 		display: none;
 		/* flex-direction: column; */
+	}
+
+	/* border */
+	&-box--book {
+		display: none;
+	}
+	&-box--searching {
+		display: none;
+	}
+	&-box--sharing {
+		display: none;
 	}
 	&-image {
 		max-width: 100%;
@@ -130,6 +138,7 @@
 
 @media screen and (min-width:1024px) {
 	.features {
+		position: relative;
 		&-title {
 			text-align: center;
 			font-size: 2em;
@@ -149,8 +158,8 @@
 			column-gap: .5em;
 			max-width: 850px;
 			margin: auto;
+			
 		}
-	
 		&-description	{
 			margin: 0;
 			max-width: 420px;
@@ -160,6 +169,39 @@
 			p {
 				font-size: 1.1em;
 			}
+		}
+		&-box--book {
+			display: block;
+			position: absolute;
+			width: 40%;
+			height: 53%;
+			left: 0;
+			top: 58%;
+			z-index: -100;
+			background-color: #5368df;
+			border-radius: 0 40% 40% 0;
+		}
+		&-box--searching {
+			display: block;
+			position: absolute;
+			width: 40%;
+			height: 53%;
+			left: 0;
+			top: 50%;
+			z-index: -100;
+			background-color: #5368df;
+			border-radius: 0 40% 40% 0;
+		}
+		&-box--sharing {
+			display: block;
+			position: absolute;
+			width: 40%;
+			height: 53%;
+			left: 0;
+			top: 53%;
+			z-index: -100;
+			background-color: #5368df;
+			border-radius: 0 40% 40% 0;
 		}
 		&-link {
 			label::after {
