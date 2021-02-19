@@ -130,7 +130,9 @@
 				color: black;
 				text-decoration: none;
 				text-transform: uppercase;
-			
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 		&-navigation .header-btn {
@@ -141,6 +143,9 @@
 			letter-spacing: .1em;
 			font-size: 1em;
 			margin-left: 1.3em;
+			&:hover {
+				text-decoration: none;
+			}
 		}
 	}
 }

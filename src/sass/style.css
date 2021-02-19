@@ -165,6 +165,9 @@
     text-decoration: none;
     text-transform: uppercase;
   }
+  .header-navigation a:hover {
+    text-decoration: underline;
+  }
   .header-navigation .header-btn {
     padding: .8em 2em;
     background: #fa5757;
@@ -173,6 +176,9 @@
     letter-spacing: .1em;
     font-size: 1em;
     margin-left: 1.3em;
+  }
+  .header-navigation .header-btn:hover {
+    text-decoration: none;
   }
 }
 
@@ -924,6 +930,19 @@
 
 .footer-icons svg {
   margin-right: 1em;
+}
+
+.footer-credits {
+  display: block;
+  margin: auto;
+}
+
+.footer-credits p {
+  font-size: .7em;
+  text-align: center;
+  color: #9194a1;
+  margin: 0;
+  padding: 1em 0;
 }
 
 @media screen and (min-width: 1024px) {
