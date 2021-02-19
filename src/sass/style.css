@@ -236,8 +236,8 @@
     margin-bottom: 5em;
   }
   .hero-grid {
-    -ms-grid-columns: 500px 1fr;
-        grid-template-columns: 500px 1fr;
+    -ms-grid-columns: 450px 1fr;
+        grid-template-columns: 450px 1fr;
         grid-template-areas: "description image";
     -webkit-box-align: center;
         -ms-flex-align: center;
