@@ -301,12 +301,7 @@
   /* 	&-grid {
 		display: grid;
 	} */
-  /* 	&:hover::before {
-	}
-		content: "";
-		height: 2px;
-		color: red;
-	} */
+  /*linea 60  */
 }
 
 .tabs-radio {
@@ -320,24 +315,6 @@
 
 .tabs ul:first-child {
   border-top: 1px solid #ccc;
-}
-
-.tabs-link {
-  padding: 1em 0;
-  border-bottom: 1px solid #ccc;
-  text-align: center;
-  position: relative;
-}
-
-.tabs-link:hover::before {
-  content: "";
-  height: 3px;
-  display: block;
-  position: absolute;
-  top: 3.2em;
-  left: 0;
-  right: 0;
-  background-color: red;
 }
 
 .tabs-grid {
@@ -373,8 +350,40 @@
   display: none;
 }
 
+.tabs-link {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  height: 50px;
+}
+
+.tabs-link label {
+  padding: 1em 0;
+  display: block;
+  position: relative;
+}
+
+.tabs-link label::after {
+  display: none;
+  content: "";
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  left: 0;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-box-shadow: inset 0 -15px 0px -10px #fa5757;
+          box-shadow: inset 0 -15px 0px -10px #fa5757;
+}
+
 .tabs input[id="bookmarking"]:checked {
-  padding: 20px;
+  /* 	padding: 20px; 
+	& ~ ul [for="bookmarking"]:after
+        display: block*/
+}
+
+.tabs input[id="bookmarking"]:checked ~ ul [for="bookmarking"]:after {
+  display: block;
 }
 
 .tabs input[id="bookmarking"]:checked ~ ul #tab-bookmarking {
@@ -384,7 +393,7 @@
 }
 
 .tabs input[id="searching"]:checked {
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .tabs input[id="searching"]:checked ~ ul #tab-searching {
@@ -394,7 +403,7 @@
 }
 
 .tabs input[id="sharing"]:checked {
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .tabs input[id="sharing"]:checked ~ ul #tab-sharing {
@@ -421,6 +430,8 @@
         grid-template-columns: repeat(3, 1fr);
     -webkit-column-gap: .5em;
             column-gap: .5em;
+    max-width: 850px;
+    margin: auto;
   }
   .tabs-description {
     margin: 0;
