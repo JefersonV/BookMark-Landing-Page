@@ -186,6 +186,10 @@
   margin: 2em 0 1.5em;
 }
 
+.hero-box {
+  display: none;
+}
+
 .hero-title, .tabs-h2, .extension-description h2, .ask-description h2 {
   margin: 0;
   font-size: 2.2em;
@@ -233,7 +237,23 @@
 
 @media screen and (min-width: 1024px) {
   .hero {
+    position: relative;
     margin-bottom: 5em;
+  }
+  .hero-box {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 35%;
+    z-index: -100;
+    margin: 0;
+    border: 10px solid #5368df;
+    border-radius: 1em;
+    height: 300px;
+    width: 37%;
+    /* top left bottom right */
+    border-radius: 40% 0 0 40%;
+    background-color: #5368df;
   }
   .hero-grid {
     -ms-grid-columns: 450px 1fr;
@@ -245,7 +265,7 @@
     height: 560px;
   }
   .hero-image {
-    width: 90%;
+    width: 95%;
     justify-self: flex-end;
   }
   .hero-description {
