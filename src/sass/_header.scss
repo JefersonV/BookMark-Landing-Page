@@ -4,7 +4,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 1em 0;
+		padding: 1em;
 	}
 	&-image {
 		margin: 0;
@@ -109,6 +109,9 @@
 
 @media screen and (min-width: 1000px) {
 	.header {
+		&-flex {
+			padding: 1em 0;
+		}
 		/* d-none burger button */
 		&-label {
 			display: none;

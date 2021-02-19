@@ -90,9 +90,7 @@
 
 
 	input[id="bookmarking"]:checked{
-	/* 	padding: 20px; 
-	& ~ ul [for="bookmarking"]:after
-        display: block*/
+	/* 	padding: 20px; */
 		& ~ ul [for="bookmarking"]:after {
 			display: block;
 		}
@@ -105,7 +103,12 @@
 	
 	} 
 	input[id="searching"]:checked{
-		/* padding: 20px; */
+		/* padding: 20px; 
+		& ~ ul [for="bookmarking"]:after
+        display: block*/
+		& ~ ul [for="searching"]:after {
+			display: block;
+		}
 		& ~ ul #tab-searching {
 		/* 	border: 1px solid red; */
 			padding: 20px;
@@ -114,6 +117,9 @@
 	} 
 	input[id="sharing"]:checked{
 		/* padding: 20px; */
+		& ~ ul [for="sharing"]:after {
+			display: block;
+		}
 		& ~ ul #tab-sharing {
 			/* border: 1px solid red; */
 			padding: 20px;
@@ -153,6 +159,12 @@
 			}
 			p {
 				font-size: 1.1em;
+			}
+		}
+		&-link {
+			label::after {
+				width: 100%;
+				transform: translateX(0%);
 			}
 		}
 		&-image {

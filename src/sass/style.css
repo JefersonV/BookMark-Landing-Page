@@ -15,7 +15,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1em 0;
+  padding: 1em;
 }
 
 .header-image {
@@ -142,6 +142,9 @@
   .header {
     /* d-none burger button */
   }
+  .header-flex {
+    padding: 1em 0;
+  }
   .header-label {
     display: none;
   }
@@ -195,6 +198,7 @@
   text-align: center;
   color: #9194a1;
   line-height: 1.7em;
+  padding: 0 2em;
   margin-bottom: 1.8em;
 }
 
@@ -253,6 +257,7 @@
   }
   .hero-paragraph, .features-paragraph, .tabs-p, .extension-description p, .ask-description p, .carousel-paragraph {
     text-align: left;
+    padding: 0;
   }
   .hero-buttons {
     margin: 0;
@@ -377,9 +382,7 @@
 }
 
 .tabs input[id="bookmarking"]:checked {
-  /* 	padding: 20px; 
-	& ~ ul [for="bookmarking"]:after
-        display: block*/
+  /* 	padding: 20px; */
 }
 
 .tabs input[id="bookmarking"]:checked ~ ul [for="bookmarking"]:after {
@@ -393,7 +396,13 @@
 }
 
 .tabs input[id="searching"]:checked {
-  /* padding: 20px; */
+  /* padding: 20px; 
+		& ~ ul [for="bookmarking"]:after
+        display: block*/
+}
+
+.tabs input[id="searching"]:checked ~ ul [for="searching"]:after {
+  display: block;
 }
 
 .tabs input[id="searching"]:checked ~ ul #tab-searching {
@@ -404,6 +413,10 @@
 
 .tabs input[id="sharing"]:checked {
   /* padding: 20px; */
+}
+
+.tabs input[id="sharing"]:checked ~ ul [for="sharing"]:after {
+  display: block;
 }
 
 .tabs input[id="sharing"]:checked ~ ul #tab-sharing {
@@ -442,6 +455,11 @@
   }
   .tabs-description p {
     font-size: 1.1em;
+  }
+  .tabs-link label::after {
+    width: 100%;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
   .tabs-image {
     position: relative;
@@ -502,10 +520,14 @@
   }
 }
 
+.extension {
+  margin-top: 7em;
+}
+
 .extension-grid {
   display: -ms-grid;
   display: grid;
-  row-gap: 1em;
+  row-gap: 2em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -551,6 +573,8 @@
 
 .extension-card-desc p {
   margin: 0;
+  color: #9194a1;
+  font-weight: 500;
 }
 
 .extension-button {
